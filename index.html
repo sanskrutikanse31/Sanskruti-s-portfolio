@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title of webpage -->
+    <title>Sanskruti-Developer Portfolio</title>
+    <!-- import font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- internal css -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(5, 5, 77);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(11, 11, 95);
+        color: white;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: pink;
+        font-size: 1.2rem;
+      }
+      .left {
+        font-size: 1rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        /* top and bottom margin as 23px , left and right margin as 0px */
+        margin: 120px 0px;
+      }
+      .firstSection > div {
+        width: 50%;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+        margin: 70px 50px;
+      }
+      .leftSection .btn1{
+        padding: 12px;
+        cursor: pointer;
+        background-color: #080548;
+        color: white;
+        font-size: 14px;
+        border: solid white 1px;
+        border-radius: 8px;
+        
+      }
+      
+      .leftSection .btn2{
+        padding: 12px;
+        cursor: pointer;
+        
+        color: rgb(10, 9, 9);
+        font-size: 15px;
+        border: solid white 1px;
+        border-radius: 8px;
+        
+      }
+      
+      .rightSection img {
+        width: 60%;
+        border-radius: 0.7rem;
+      }
+      .purple {
+        color: rgb(103, 66, 162);
+      }
+      .text-gray {
+        color: gray;
+        font-size: 1rem;
+      }
+      #element {
+        color: rgb(103, 66, 162);
+      }
+
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: 20px 50px;
+        height: 80vh;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 96px;
+        width: 1px;
+        background-color: white;
+        margin: 0px 95px;
+      }
+
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -28px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 65px;
+        width: 180px;
+        left: -45px;
+      }
+
+
+      .vertical-desc{
+        position: relative;
+        top: 65px;
+        font-size: 9px;
+        color: gray;
+        width: 180px;
+        left: -45px;
+      }
+
+      footer{
+       background-color: rgb(14, 14, 91);
+       padding: 20px 30px
+       /* height: 233px; */
+      }
+
+      .footer
+      {
+        display: flex;
+        justify-content: space-evenly;
+              }
+      .footer ul
+      {
+        list-style: none;
+         
+      }
+      .footer ul li a
+      {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer > div
+      {
+        width: 223px;
+      }
+      footer .footer-rights
+      {
+        text-align: center;
+       color: gray;
+       padding: 20px 0px;
+       
+      }
+    </style>
+  </head>
+
+  <!-- code of body of webpage -->
+  <body>
+    <!-- header section of web page  -->
+    <header>
+      <nav>
+        <div class="left">Sanskruti's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main section of webpage -->
+    <main>
+      <!-- firstSection -->
+      <section class="firstSection">
+        <!-- leftsection -->
+        <div class="leftSection">
+          Hi,My name is <span class="purple">Sanskruti</span>
+          <div>and I am a passionate</div>
+          <!-- Element to contain animated typing -->
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn1">Download Resume</button>
+            <button class="btn2">Visit Github</button>
+          </div>
+        </div>
+
+        <!-- rightsection -->
+        <div class="rightSection">
+          <img src="mypic.jpg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <!-- secondSection -->
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img src="developer.png" class="image-top" />
+
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+             <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis blanditiis odit reprehenderit doloribus iusto, inventore tempore! Hic eveniet aut ducimus obcaecati molestiae iure sapiente quia corrupti. Praesentium accusantium deserunt magnam.</div>
+          </div>
+
+          <div class="vertical">
+            <img src="whatsapp.png" class="image-top" />
+
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+             <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis blanditiis odit reprehenderit doloribus iusto, inventore tempore! Hic eveniet aut ducimus obcaecati molestiae iure sapiente quia corrupti. Praesentium accusantium deserunt magnam.</div>
+          </div>
+
+          <div class="vertical">
+            <img src="instagram.png" class="image-top" />
+
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+             <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis blanditiis odit reprehenderit doloribus iusto, inventore tempore! Hic eveniet aut ducimus obcaecati molestiae iure sapiente quia corrupti. Praesentium accusantium deserunt magnam.</div>
+          </div>
+
+          <div class="vertical">
+            <img src="facebook.png" class="image-top" />
+
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+             <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis blanditiis odit reprehenderit doloribus iusto, inventore tempore! Hic eveniet aut ducimus obcaecati molestiae iure sapiente quia corrupti. Praesentium accusantium deserunt magnam.</div>
+          </div>
+
+          <div class="vertical">
+            <img src="twitter.png" class="image-top" />
+
+            <div class="vertical-title">HTML Developer (2010-2012)</div>
+             <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis blanditiis odit reprehenderit doloribus iusto, inventore tempore! Hic eveniet aut ducimus obcaecati molestiae iure sapiente quia corrupti. Praesentium accusantium deserunt magnam.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+         <div class="footer">
+             <div class="footer-first"> 
+                <h3>Developer Sanskruti's Portfolio</h3>
+             </div>
+             <div class="footer-second">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+               
+              </ul>
+             </div>
+             <div class="footer-third">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+               
+              </ul>
+             </div>
+             <div class="footer-fourth">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+               
+              </ul>
+             </div>
+
+         </div>
+        <div class="footer-rights">
+         www.sanskruti'sportfolio.com  | &#169; All rights reserved 2023
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+    <!-- add javascript code -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Video Creator"],
+        typeSpeed: 80,
+      });
+    </script>
+  </body>
+</html>
